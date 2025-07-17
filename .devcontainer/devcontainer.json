@@ -1,0 +1,21 @@
+{
+    "name": "RStudio Environment",
+    "image": "earthlabcu/mefa_2024:latest",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "r.plot.devArgs": {
+              "width": 1200,
+              "height": 500
+            },
+        "workbench.editorAssociations": {
+              "*.qmd": "quarto.visualEditor"
+            }
+    },
+    "extensions": [
+        "REditorSupport.r",
+        "quarto.quarto"
+    ],
+    "postCreateCommand": "git pull",
+    "forwardPorts": [8787],
+    "remoteUser": "rstudio"
+  }
